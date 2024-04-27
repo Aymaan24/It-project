@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset"utf-8" />
+      <style>
+         * {
+            box-sizing: border-box;
+         }
+         :root {
+            --head-height: 45px;
+            --nav-height: 40px;
+         }
+         body {
+            margin:  0px;
+            padding:  0px;
+            height: 100vh;
+            position: relative;
+            font-family:arial;
+            
+         }
+         header ul {
+            display: flex;
+            width: 100%;
+            margin: 0px;
+            height: var(--head-height);
+            list-style: none;
+            background-color: #00a2ff;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+         }
+         header a {
+            font-size: 20px !important;
+         }
+         nav ul {
+            display: flex;
+            width: 100%;
+            margin: 0px;
+            height: var(--nav-height);
+            list-style: none;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 13px 20px #eee;
+            position: fixed;
+            top: var(--head-height);
+            overflow: auto;
+         }
+         nav ul li a {
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #D33A2C;
+            font-weight: 300;
+            white-space: nowrap;
+         }
+         nav ul li {
+            margin: 0px 19px;
+         }
+         nav ul li:hover {
+            outline: 1px solid #bf3528;
+         }
+         header ul a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+         }
+         .logo {
+            background-color: rgb(255, 150, 3);
+            height: var(--head-height);
+            padding-top: 10px;
+            width: 90px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+         }
+         .logout a {
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #399cffc0; 
+            font-size: 16px !important;
+            box-shadow: 0px 0px  8px rgba(0, 0, 0, 0.5);
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <ul>
+            <li class="logout"><a href="project.html">Log out</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="logo">Logo</li>
+         </ul> 
+      </header>
+      <nav>
+         <ul>
+            <li><a href="#">Social media groups</a></li>
+            <li><a href="#">Live meeting</a></li>
+            <li><a href="#">Assignment</a></li>
+            <li><a href="#">Time table</a></li>
+            <li><a href="#">Exam results</a></li>
+            <li><a href="testt.html">Exam timetable</a></li>
+         </ul>
+      </nav>
+   </body>
+</html>
